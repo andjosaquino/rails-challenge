@@ -1,19 +1,13 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @link.title %>
-</p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @link.url %>
-</p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @link.user.name %>
-</p>
+  <div class="link row clearfix">
+    <h2>
+      <%= @link.title%><br>
+      <small class="author"> 
+        Submitted <%= time_ago_in_words(@link.created_at) %>
+        by <%= @link.user.name %></small>
+    </h2>
+  </div>
 
 <%= link_to 'Edit', edit_link_path(@link) %> |
 <%= link_to 'Back', links_path %>

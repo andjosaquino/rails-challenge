@@ -1,0 +1,6 @@
+Thank you to Mackenzie Child for his walkthrough on this project!
+
+Goals for next project:
+-Overcome discrepency with syntax
+-Understand all commandline prompts
+-Add more personal manipulation
