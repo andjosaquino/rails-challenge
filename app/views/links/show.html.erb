@@ -10,6 +10,11 @@
   <%= @link.url %>
 </p>
 
+<p>
+  <strong>Name:</strong>
+  <%= @link.user.name %>
+</p>
+
 <%= link_to 'Edit', edit_link_path(@link) %> |
 <%= link_to 'Back', links_path %>
 
